@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Graduate';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Graduate'),
+        local('Graduate-Regular'),
+        url(./fonts/graduate.eot) format('embedded-opentype'),
+        url(./fonts/graduate.ttf) format('truetype'),
+        url(./fonts/graduate.woff) format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Graduate", "Times New Roman", Verdana;
+    ;
+    color: white;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80); /* The image used for background*/
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mbroumsadja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.mbroumsadja img{
+    width: 16rem;
+    height: 15rem;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+    box-shadow: 0px 1px 2px gainsboro;
+}
+
+.mbroumsadja p {
+    margin: 0;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: -.5rem;
+    cursor: pointer;
+}
+h3,h4{
+    font-weight: 500;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: -.4rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.description .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    border-radius: 9px;
+    padding: 0 4rem;
+    box-shadow: 0px 2px 4px gray;
+}
+
+.item:hover{
+    transform: translateY(2px);
+}
+
+.item label {
+    font-family: system-ui;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+@media (max-width:441px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .description .item {
+        width: 15rem;
+    }
+    .mbroumsadja img {
+        width: 22rem;
+        height: 14rem;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        box-shadow: 0px 1px 2px gainsboro;
+    }
+}
+
+.items{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.items button{
+border: none;
+padding: .5rem 2rem;
+border-radius: 10px;
+}
+.items button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
